@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream text-brown font-sans antialiased;
+    background-image:
+      radial-gradient(circle at 12% 0%, rgba(189, 140, 76, 0.08), transparent 40%),
+      radial-gradient(circle at 90% 100%, rgba(201, 138, 134, 0.08), transparent 45%);
+  }
+  ::selection {
+    @apply bg-gold/25 text-brown;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply text-xs font-medium uppercase tracking-luxe text-gold;
+  }
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-brown px-7 py-3.5 text-sm font-medium uppercase tracking-widest text-cream transition-all hover:bg-gold-deep;
+  }
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-7 py-3.5 text-sm font-medium uppercase tracking-widest text-white transition-transform hover:scale-[1.03];
+  }
+  .gold-rule {
+    @apply mx-auto h-px w-24;
+    background: linear-gradient(90deg, transparent, #bd8c4c, transparent);
+  }
+}
+
+@layer utilities {
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { @apply bg-cream-200; }
+  ::-webkit-scrollbar-thumb { @apply bg-cream-300 rounded-full border-2 border-cream-200; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-gold/60; }
+}
