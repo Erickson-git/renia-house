@@ -41,9 +41,11 @@ export default function Contact() {
             </form>
 
             <ul className="space-y-3 text-cream/90">
+              <li className="flex items-center gap-3"><span className="text-orange-soft"><Icon name="heart" className="h-5 w-5" /></span> {salon.responsable}</li>
               <li className="flex items-center gap-3"><span className="text-orange-soft"><Icon name="phone" className="h-5 w-5" /></span><a href={tel} className="hover:text-orange-soft">{salon.telephone}</a></li>
+              <li className="flex items-center gap-3"><span className="text-orange-soft"><Icon name="whatsapp" className="h-5 w-5" /></span><a href={`https://wa.me/${salon.whatsapp}`} target="_blank" rel="noopener noreferrer" className="hover:text-orange-soft">+228 92 22 59 00 · WhatsApp</a></li>
               <li className="flex items-center gap-3"><span className="text-orange-soft"><Icon name="mappin" className="h-5 w-5" /></span> {salon.adresse}</li>
-              <li className="flex items-center gap-3"><span className="text-orange-soft"><Icon name="mail" className="h-5 w-5" /></span><a href={`mailto:${salon.email}`} className="hover:text-orange-soft">{salon.email}</a></li>
+              {salon.email && <li className="flex items-center gap-3"><span className="text-orange-soft"><Icon name="mail" className="h-5 w-5" /></span><a href={`mailto:${salon.email}`} className="hover:text-orange-soft">{salon.email}</a></li>}
             </ul>
 
             <div className="border-t border-cream/15 pt-5">

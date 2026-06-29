@@ -9,14 +9,15 @@ export const salon = {
   slogan: 'Votre beauté, notre passion',
   activite: 'Salon de coiffure & beauté',
   ville: 'Lomé, Togo',
+  responsable: 'Mme HOUNKPE Holewassi Irène',
   logoXofix: 'xofix-logo.png',
 
-  // --- Contacts (À COMPLÉTER) ---
-  telephone: '+228 90 00 00 00',
-  whatsapp: '22890000000', // format international SANS le "+"
-  email: 'contact@reniahouse.tg',
-  adresse: 'Quartier [À COMPLÉTER], Lomé',
-  mapsQuery: 'Renia House Lomé Togo',
+  // --- Contacts ---
+  telephone: '+228 96 68 10 55',
+  whatsapp: '22892225900', // WhatsApp : +228 92 22 59 00 (format international SANS le "+")
+  email: '',
+  adresse: 'Togo 2000, Amangotigome — Lomé',
+  mapsQuery: 'Amangotigome Lomé Togo',
 
   horaires: [
     { jour: 'Lundi – Vendredi', heures: '08h00 – 19h00' },
@@ -38,8 +39,8 @@ export const heroSlides = ['perruque4.jpg', 'perruque8.jpg', 'perruque6.jpg']
 
 // Bandeau défilant (marquee)
 export const marquee = [
-  'Coiffure', 'Tresses', 'Tissages', 'Perruques', 'Soins', 'Maquillage',
-  'Onglerie', 'Mariage', 'Événements',
+  'Coiffure', 'Tresses', 'Perruques', 'Soins du visage', 'Extension de cils',
+  'Microblading', 'Mariage', 'Événements',
 ]
 
 // Atouts (trust)
@@ -54,10 +55,10 @@ export const atouts = [
 export const prestations = [
   { titre: 'Coiffure', image: 'coiffure.jpg', icon: 'scissors', desc: 'Coupe, brushing, mise en plis, soins du cheveu.', prix: 'à partir de [—] FCFA' },
   { titre: 'Tresses & Nattes', image: 'tresses.jpg', icon: 'waves', desc: 'Tresses collées, twists, nattes africaines, vanilles.', prix: 'à partir de [—] FCFA' },
-  { titre: 'Tissages & Perruques', image: 'perruque1.jpg', icon: 'crown', desc: 'Perruques de qualité, lace sur mesure, pose de tissage impeccable.', prix: 'à partir de [—] FCFA' },
-  { titre: 'Soins & Défrisage', image: 'soins.jpg', icon: 'leaf', desc: 'Soins profonds, traitements, défrisage, coloration.', prix: 'à partir de [—] FCFA' },
-  { titre: 'Maquillage', image: 'maquillage.jpg', icon: 'brush', desc: 'Maquillage jour, soirée, mariage et événements.', prix: 'à partir de [—] FCFA' },
-  { titre: 'Onglerie', image: 'onglerie.jpg', icon: 'sparkles', desc: 'Manucure, pédicure, pose d\'ongles, nail art.', prix: 'à partir de [—] FCFA' },
+  { titre: 'Perruques & Tissages', image: 'perruque1.jpg', icon: 'crown', desc: 'Perruques de qualité, lace sur mesure, pose de tissage impeccable.', prix: 'à partir de [—] FCFA' },
+  { titre: 'Soins du visage', image: 'soins.jpg', icon: 'leaf', desc: 'Nettoyage, hydratation et éclat du visage.', prix: 'à partir de [—] FCFA' },
+  { titre: 'Extension de cils', image: 'cils.jpg', icon: 'sparkles', desc: 'Pose de cils : volume russe, classique, hybride.', prix: 'à partir de [—] FCFA' },
+  { titre: 'Microblading', image: 'microblading.jpg', icon: 'brush', desc: 'Restructuration et maquillage semi-permanent des sourcils.', prix: 'à partir de [—] FCFA' },
 ]
 
 // --- Perruques (la spécialité de Renia House) ------------------------------
@@ -76,15 +77,15 @@ export const perruques = {
 // --- Galerie ---
 export const galerie = [
   { fichier: 'perruque2.jpg', legende: 'Perruque lace' },
-  { fichier: 'g3.jpg', legende: 'Maquillage' },
+  { fichier: 'coiffure.jpg', legende: 'Coiffure' },
   { fichier: 'perruque5.jpg', legende: 'Perruque sur mesure' },
-  { fichier: 'g2.jpg', legende: 'Mains soignées' },
+  { fichier: 'cils.jpg', legende: 'Extension de cils' },
   { fichier: 'perruque7.jpg', legende: 'Perruque longue' },
-  { fichier: 'g4.jpg', legende: 'Make-up soirée' },
-  { fichier: 'g5.jpg', legende: 'Peau éclatante' },
+  { fichier: 'g5.jpg', legende: 'Soin du visage' },
+  { fichier: 'microblading.jpg', legende: 'Microblading' },
   { fichier: 'perruque9.jpg', legende: 'Coiffure perruque' },
-  { fichier: 'g6.jpg', legende: 'Vernis' },
-  { fichier: 'g8.jpg', legende: 'Onglerie pro' },
+  { fichier: 'tresses.jpg', legende: 'Tresses' },
+  { fichier: 'g3.jpg', legende: 'Mise en beauté' },
 ]
 
 // --- Marketing -------------------------------------------------------------
@@ -111,7 +112,7 @@ export const temoignages = [
 export const apropos = {
   image: 'about.jpg',
   texte:
-    "Chez Renia House, chaque cliente repart plus belle et plus confiante. Notre salon à Lomé réunit le savoir-faire, l'écoute et les meilleurs produits pour sublimer votre beauté — coiffure, soins, maquillage et onglerie. Prenez place, détendez-vous : on s'occupe de tout.",
+    "Fondé et dirigé par Mme HOUNKPE Holewassi Irène, Renia House est votre adresse beauté à Amangotigome (Lomé). Coiffure, tresses, perruques de qualité, soins du visage, extension de cils et microblading : chaque cliente repart plus belle et plus confiante. Prenez place, détendez-vous — on s'occupe de tout.",
   chiffres: [
     { n: '100%', l: 'Satisfaction' },
     { n: '6+', l: 'Prestations' },
