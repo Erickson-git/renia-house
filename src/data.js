@@ -77,7 +77,6 @@ export const perruques = {
 export const galerie = [
   { fichier: 'perruque2.jpg', legende: 'Perruque lace' },
   { fichier: 'g1.jpg', legende: 'Nail art' },
-  { fichier: 'perruque3.jpg', legende: 'Perruque naturelle' },
   { fichier: 'g3.jpg', legende: 'Maquillage' },
   { fichier: 'perruque5.jpg', legende: 'Perruque sur mesure' },
   { fichier: 'g2.jpg', legende: 'Mains soignées' },
