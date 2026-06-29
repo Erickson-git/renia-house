@@ -1,6 +1,7 @@
 // ============================================================================
 //  data.js — Toutes les infos du salon. MODIFIEZ ICI (textes, prix, contacts).
 //  Les éléments [À COMPLÉTER] sont à remplacer par les vraies informations.
+//  Les images sont dans /public/assets (remplacez-les par vos vraies photos).
 // ============================================================================
 
 export const salon = {
@@ -8,13 +9,13 @@ export const salon = {
   slogan: 'Votre beauté, notre passion',
   activite: 'Salon de coiffure & beauté',
   ville: 'Lomé, Togo',
+  logoXofix: 'xofix-logo.png',
 
   // --- Contacts (À COMPLÉTER) ---
-  telephone: '+228 90 00 00 00', // affiché
-  whatsapp: '22890000000', // format international SANS le "+" (ex. Togo : 228…)
-  email: 'contact@reniahouse.tg', // [À COMPLÉTER ou retirer]
-  adresse: 'Quartier [À COMPLÉTER], Lomé', // [À COMPLÉTER]
-  // Lien Google Maps (remplacez par l'adresse réelle pour la carte)
+  telephone: '+228 90 00 00 00',
+  whatsapp: '22890000000', // format international SANS le "+"
+  email: 'contact@reniahouse.tg',
+  adresse: 'Quartier [À COMPLÉTER], Lomé',
   mapsQuery: 'Renia House Lomé Togo',
 
   horaires: [
@@ -30,60 +31,54 @@ export const salon = {
   },
 }
 
-// Message pré-rempli pour la prise de rendez-vous WhatsApp
-export const rdvMessage =
-  'Bonjour Renia House 👋, je souhaite prendre rendez-vous.'
+export const rdvMessage = 'Bonjour Renia House 👋, je souhaite prendre rendez-vous.'
+
+// Diaporama d'accueil
+export const heroSlides = ['hero1.jpg', 'hero2.jpg', 'hero3.jpg']
+
+// Bandeau défilant (marquee)
+export const marquee = [
+  'Coiffure', 'Tresses', 'Tissages', 'Perruques', 'Soins', 'Maquillage',
+  'Onglerie', 'Mariage', 'Événements',
+]
+
+// Atouts (trust)
+export const atouts = [
+  { ico: '💎', titre: 'Savoir-faire', desc: 'Des mains expertes et passionnées.' },
+  { ico: '🧴', titre: 'Produits de qualité', desc: 'Les meilleures marques pour vos cheveux.' },
+  { ico: '⏱️', titre: 'Sur rendez-vous', desc: 'Réservez en un clic sur WhatsApp.' },
+  { ico: '💖', titre: 'Écoute & conseil', desc: 'Un accompagnement personnalisé.' },
+]
 
 // --- Prestations (prix À COMPLÉTER) ---
 export const prestations = [
-  {
-    titre: 'Coiffure',
-    desc: 'Coupe, brushing, mise en plis, soins du cheveu.',
-    prix: 'à partir de [—] FCFA',
-    icone: '✂️',
-  },
-  {
-    titre: 'Tresses & Nattes',
-    desc: 'Tresses collées, twists, nattes africaines, vanilles.',
-    prix: 'à partir de [—] FCFA',
-    icone: '💇🏾‍♀️',
-  },
-  {
-    titre: 'Tissages & Perruques',
-    desc: 'Pose de tissage, perruques sur mesure, lace.',
-    prix: 'à partir de [—] FCFA',
-    icone: '👑',
-  },
-  {
-    titre: 'Soins & Défrisage',
-    desc: 'Soins profonds, traitements, défrisage, coloration.',
-    prix: 'à partir de [—] FCFA',
-    icone: '🧴',
-  },
-  {
-    titre: 'Maquillage',
-    desc: 'Maquillage jour, soirée, mariage et événements.',
-    prix: 'à partir de [—] FCFA',
-    icone: '💄',
-  },
-  {
-    titre: 'Onglerie',
-    desc: 'Manucure, pédicure, pose de faux ongles, nail art.',
-    prix: 'à partir de [—] FCFA',
-    icone: '💅🏾',
-  },
+  { titre: 'Coiffure', image: 'coiffure.jpg', icone: '✂️', desc: 'Coupe, brushing, mise en plis, soins du cheveu.', prix: 'à partir de [—] FCFA' },
+  { titre: 'Tresses & Nattes', image: 'tresses.jpg', icone: '💇🏾‍♀️', desc: 'Tresses collées, twists, nattes africaines, vanilles.', prix: 'à partir de [—] FCFA' },
+  { titre: 'Tissages & Perruques', image: 'tissage.jpg', icone: '👑', desc: 'Pose de tissage, perruques sur mesure, lace.', prix: 'à partir de [—] FCFA' },
+  { titre: 'Soins & Défrisage', image: 'soins.jpg', icone: '🌿', desc: 'Soins profonds, traitements, défrisage, coloration.', prix: 'à partir de [—] FCFA' },
+  { titre: 'Maquillage', image: 'maquillage.jpg', icone: '💄', desc: 'Maquillage jour, soirée, mariage et événements.', prix: 'à partir de [—] FCFA' },
+  { titre: 'Onglerie', image: 'onglerie.jpg', icone: '💅🏾', desc: 'Manucure, pédicure, pose d\'ongles, nail art.', prix: 'à partir de [—] FCFA' },
 ]
 
-// --- Galerie : remplacez par vos photos dans /public/assets ----------------
-// Mettez vos images (galerie1.jpg … galerie6.jpg) puis indiquez-les ici.
+// --- Galerie ---
 export const galerie = [
-  { fichier: 'galerie1.jpg', legende: 'Tresses' },
-  { fichier: 'galerie2.jpg', legende: 'Tissage' },
-  { fichier: 'galerie3.jpg', legende: 'Coiffure' },
-  { fichier: 'galerie4.jpg', legende: 'Maquillage' },
-  { fichier: 'galerie5.jpg', legende: 'Onglerie' },
-  { fichier: 'galerie6.jpg', legende: 'Perruque' },
+  { fichier: 'g1.jpg', legende: 'Nail art' },
+  { fichier: 'g2.jpg', legende: 'Mains soignées' },
+  { fichier: 'g3.jpg', legende: 'Maquillage' },
+  { fichier: 'g4.jpg', legende: 'Make-up soirée' },
+  { fichier: 'g5.jpg', legende: 'Peau éclatante' },
+  { fichier: 'g6.jpg', legende: 'Vernis' },
+  { fichier: 'g7.jpg', legende: 'Soins' },
+  { fichier: 'g8.jpg', legende: 'Onglerie pro' },
 ]
 
-export const apropos =
-  "Chez Renia House, chaque cliente repart plus belle et plus confiante. Notre salon à Lomé réunit le savoir-faire, l'écoute et les meilleurs produits pour sublimer votre beauté — coiffure, soins, maquillage et onglerie. Prenez place, détendez-vous : on s'occupe de tout."
+export const apropos = {
+  image: 'about.jpg',
+  texte:
+    "Chez Renia House, chaque cliente repart plus belle et plus confiante. Notre salon à Lomé réunit le savoir-faire, l'écoute et les meilleurs produits pour sublimer votre beauté — coiffure, soins, maquillage et onglerie. Prenez place, détendez-vous : on s'occupe de tout.",
+  chiffres: [
+    { n: '100%', l: 'Satisfaction' },
+    { n: '6+', l: 'Prestations' },
+    { n: '★★★★★', l: 'Avis clientes' },
+  ],
+}
