@@ -31,7 +31,7 @@ export const salon = {
   },
 }
 
-export const rdvMessage = 'Bonjour Renia House 👋, je souhaite prendre rendez-vous.'
+export const rdvMessage = 'Bonjour Renia House, je souhaite prendre rendez-vous.'
 
 // Diaporama d'accueil
 export const heroSlides = ['hero1.jpg', 'hero2.jpg', 'hero3.jpg']
@@ -44,20 +44,20 @@ export const marquee = [
 
 // Atouts (trust)
 export const atouts = [
-  { ico: '💎', titre: 'Savoir-faire', desc: 'Des mains expertes et passionnées.' },
-  { ico: '🧴', titre: 'Produits de qualité', desc: 'Les meilleures marques pour vos cheveux.' },
-  { ico: '⏱️', titre: 'Sur rendez-vous', desc: 'Réservez en un clic sur WhatsApp.' },
-  { ico: '💖', titre: 'Écoute & conseil', desc: 'Un accompagnement personnalisé.' },
+  { icon: 'gem', titre: 'Savoir-faire', desc: 'Des mains expertes et passionnées.' },
+  { icon: 'droplet', titre: 'Produits de qualité', desc: 'Les meilleures marques pour vos cheveux.' },
+  { icon: 'clock', titre: 'Sur rendez-vous', desc: 'Réservez en un clic sur WhatsApp.' },
+  { icon: 'heart', titre: 'Écoute & conseil', desc: 'Un accompagnement personnalisé.' },
 ]
 
 // --- Prestations (prix À COMPLÉTER) ---
 export const prestations = [
-  { titre: 'Coiffure', image: 'coiffure.jpg', icone: '✂️', desc: 'Coupe, brushing, mise en plis, soins du cheveu.', prix: 'à partir de [—] FCFA' },
-  { titre: 'Tresses & Nattes', image: 'tresses.jpg', icone: '💇🏾‍♀️', desc: 'Tresses collées, twists, nattes africaines, vanilles.', prix: 'à partir de [—] FCFA' },
-  { titre: 'Tissages & Perruques', image: 'tissage.jpg', icone: '👑', desc: 'Pose de tissage, perruques sur mesure, lace.', prix: 'à partir de [—] FCFA' },
-  { titre: 'Soins & Défrisage', image: 'soins.jpg', icone: '🌿', desc: 'Soins profonds, traitements, défrisage, coloration.', prix: 'à partir de [—] FCFA' },
-  { titre: 'Maquillage', image: 'maquillage.jpg', icone: '💄', desc: 'Maquillage jour, soirée, mariage et événements.', prix: 'à partir de [—] FCFA' },
-  { titre: 'Onglerie', image: 'onglerie.jpg', icone: '💅🏾', desc: 'Manucure, pédicure, pose d\'ongles, nail art.', prix: 'à partir de [—] FCFA' },
+  { titre: 'Coiffure', image: 'coiffure.jpg', icon: 'scissors', desc: 'Coupe, brushing, mise en plis, soins du cheveu.', prix: 'à partir de [—] FCFA' },
+  { titre: 'Tresses & Nattes', image: 'tresses.jpg', icon: 'waves', desc: 'Tresses collées, twists, nattes africaines, vanilles.', prix: 'à partir de [—] FCFA' },
+  { titre: 'Tissages & Perruques', image: 'tissage.jpg', icon: 'crown', desc: 'Pose de tissage, perruques sur mesure, lace.', prix: 'à partir de [—] FCFA' },
+  { titre: 'Soins & Défrisage', image: 'soins.jpg', icon: 'leaf', desc: 'Soins profonds, traitements, défrisage, coloration.', prix: 'à partir de [—] FCFA' },
+  { titre: 'Maquillage', image: 'maquillage.jpg', icon: 'brush', desc: 'Maquillage jour, soirée, mariage et événements.', prix: 'à partir de [—] FCFA' },
+  { titre: 'Onglerie', image: 'onglerie.jpg', icon: 'sparkles', desc: 'Manucure, pédicure, pose d\'ongles, nail art.', prix: 'à partir de [—] FCFA' },
 ]
 
 // --- Galerie ---

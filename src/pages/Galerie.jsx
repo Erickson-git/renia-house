@@ -35,7 +35,7 @@ export default function Galerie() {
           <a href={salon.reseaux.instagram} target="_blank" rel="noopener noreferrer" className="font-medium text-gold-deep hover:underline">Instagram</a>{' '}
           et{' '}
           <a href={salon.reseaux.tiktok} target="_blank" rel="noopener noreferrer" className="font-medium text-gold-deep hover:underline">TikTok</a>{' '}
-          pour plus de réalisations 💫
+          pour plus de réalisations.
         </p>
       </div>
     </section>

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { salon, rdvMessage, heroSlides } from '../data'
 import Photo from './Photo'
+import Icon from './Icon'
 
 export default function Hero() {
   const [i, setI] = useState(0)
@@ -63,7 +64,7 @@ export default function Hero() {
           className="mt-8 flex flex-wrap justify-center gap-4"
         >
           <a href={wa} target="_blank" rel="noopener noreferrer" className="btn-whatsapp">
-            <span aria-hidden>📅</span> Prendre rendez-vous
+            <Icon name="whatsapp" className="h-5 w-5" /> Prendre rendez-vous
           </a>
           <Link to="/prestations" className="inline-flex items-center justify-center gap-2 rounded-full border border-cream/40 px-7 py-3.5 text-sm font-medium uppercase tracking-widest text-cream transition-colors hover:bg-cream hover:text-brown">
             Nos prestations

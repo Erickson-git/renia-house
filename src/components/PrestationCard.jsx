@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import Photo from './Photo'
+import Icon from './Icon'
 
 export default function PrestationCard({ p, index = 0 }) {
   return (
@@ -13,7 +14,7 @@ export default function PrestationCard({ p, index = 0 }) {
       <div className="relative h-52 overflow-hidden">
         <Photo name={p.image} alt={p.titre} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
         <div className="absolute inset-0 bg-gradient-to-t from-brown/60 to-transparent" />
-        <span className="absolute left-4 top-4 rounded-full bg-cream/90 px-3 py-1 text-lg">{p.icone}</span>
+        <span className="absolute left-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-cream/90 text-gold-deep"><Icon name={p.icon} className="h-5 w-5" /></span>
         <h3 className="absolute bottom-3 left-4 font-serif text-2xl text-cream">{p.titre}</h3>
       </div>
       <div className="p-6">

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import SectionHeader from '../components/SectionHeader'
+import Icon from '../components/Icon'
 import { salon } from '../data'
 
 export default function Contact() {
@@ -12,7 +13,7 @@ export default function Contact() {
 
   const envoyer = (e) => {
     e.preventDefault()
-    const texte = `Bonjour Renia House 👋\nJe suis ${nom || '[nom]'}.\n${msg || 'Je souhaite prendre rendez-vous.'}`
+    const texte = `Bonjour Renia House,\nJe suis ${nom || '[nom]'}.\n${msg || 'Je souhaite prendre rendez-vous.'}`
     window.open(`https://wa.me/${salon.whatsapp}?text=${encodeURIComponent(texte)}`, '_blank')
   }
 
@@ -42,14 +43,14 @@ export default function Contact() {
                   className="w-full rounded-lg border border-cream/20 bg-brown-700 px-3 py-2.5 text-cream outline-none focus:border-gold-soft" />
               </div>
               <button type="submit" className="btn-whatsapp w-full">
-                <span aria-hidden>💬</span> Envoyer sur WhatsApp
+                <Icon name="whatsapp" className="h-5 w-5" /> Envoyer sur WhatsApp
               </button>
             </form>
 
             <ul className="space-y-3 text-cream/90">
-              <li className="flex items-center gap-3"><span className="text-gold-soft">📞</span><a href={tel} className="hover:text-gold-soft">{salon.telephone}</a></li>
-              <li className="flex items-center gap-3"><span className="text-gold-soft">📍</span> {salon.adresse}</li>
-              <li className="flex items-center gap-3"><span className="text-gold-soft">✉️</span><a href={`mailto:${salon.email}`} className="hover:text-gold-soft">{salon.email}</a></li>
+              <li className="flex items-center gap-3"><span className="text-gold-soft"><Icon name="phone" className="h-5 w-5" /></span><a href={tel} className="hover:text-gold-soft">{salon.telephone}</a></li>
+              <li className="flex items-center gap-3"><span className="text-gold-soft"><Icon name="mappin" className="h-5 w-5" /></span> {salon.adresse}</li>
+              <li className="flex items-center gap-3"><span className="text-gold-soft"><Icon name="mail" className="h-5 w-5" /></span><a href={`mailto:${salon.email}`} className="hover:text-gold-soft">{salon.email}</a></li>
             </ul>
 
             <div className="border-t border-cream/15 pt-5">

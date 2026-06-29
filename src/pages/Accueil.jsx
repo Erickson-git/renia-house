@@ -6,6 +6,7 @@ import TrustStrip from '../components/TrustStrip'
 import SectionHeader from '../components/SectionHeader'
 import PrestationCard from '../components/PrestationCard'
 import Photo from '../components/Photo'
+import Icon from '../components/Icon'
 import { prestations, galerie, apropos, salon, rdvMessage } from '../data'
 
 export default function Accueil() {
@@ -74,7 +75,7 @@ export default function Accueil() {
         <h2 className="font-serif text-4xl md:text-5xl">Envie d'un nouveau look ?</h2>
         <p className="mx-auto mt-4 max-w-md text-cream/70">Réservez votre créneau en un message — on s'occupe du reste.</p>
         <a href={wa} target="_blank" rel="noopener noreferrer" className="btn-whatsapp mt-8">
-          <span aria-hidden>💬</span> Prendre rendez-vous
+          <Icon name="whatsapp" className="h-5 w-5" /> Prendre rendez-vous
         </a>
       </section>
     </>

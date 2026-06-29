@@ -1,5 +1,6 @@
 import SectionHeader from '../components/SectionHeader'
 import PrestationCard from '../components/PrestationCard'
+import Icon from '../components/Icon'
 import { prestations, salon, rdvMessage } from '../data'
 
 export default function Prestations() {
@@ -22,7 +23,7 @@ export default function Prestations() {
             Écrivez-nous sur WhatsApp pour un devis ou un rendez-vous personnalisé.
           </p>
           <a href={wa} target="_blank" rel="noopener noreferrer" className="btn-whatsapp mt-6">
-            <span aria-hidden>💬</span> Nous contacter
+            <Icon name="whatsapp" className="h-5 w-5" /> Nous contacter
           </a>
         </div>
       </div>
