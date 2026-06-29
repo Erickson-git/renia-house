@@ -34,7 +34,7 @@ export const salon = {
 export const rdvMessage = 'Bonjour Renia House, je souhaite prendre rendez-vous.'
 
 // Diaporama d'accueil
-export const heroSlides = ['hero1.jpg', 'hero2.jpg']
+export const heroSlides = ['perruque4.jpg', 'perruque8.jpg', 'perruque6.jpg']
 
 // Bandeau défilant (marquee)
 export const marquee = [
