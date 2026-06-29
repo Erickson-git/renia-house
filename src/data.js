@@ -54,22 +54,60 @@ export const atouts = [
 export const prestations = [
   { titre: 'Coiffure', image: 'coiffure.jpg', icon: 'scissors', desc: 'Coupe, brushing, mise en plis, soins du cheveu.', prix: 'à partir de [—] FCFA' },
   { titre: 'Tresses & Nattes', image: 'tresses.jpg', icon: 'waves', desc: 'Tresses collées, twists, nattes africaines, vanilles.', prix: 'à partir de [—] FCFA' },
-  { titre: 'Tissages & Perruques', image: 'tissage.jpg', icon: 'crown', desc: 'Pose de tissage, perruques sur mesure, lace.', prix: 'à partir de [—] FCFA' },
+  { titre: 'Tissages & Perruques', image: 'perruque1.jpg', icon: 'crown', desc: 'Perruques de qualité, lace sur mesure, pose de tissage impeccable.', prix: 'à partir de [—] FCFA' },
   { titre: 'Soins & Défrisage', image: 'soins.jpg', icon: 'leaf', desc: 'Soins profonds, traitements, défrisage, coloration.', prix: 'à partir de [—] FCFA' },
   { titre: 'Maquillage', image: 'maquillage.jpg', icon: 'brush', desc: 'Maquillage jour, soirée, mariage et événements.', prix: 'à partir de [—] FCFA' },
   { titre: 'Onglerie', image: 'onglerie.jpg', icon: 'sparkles', desc: 'Manucure, pédicure, pose d\'ongles, nail art.', prix: 'à partir de [—] FCFA' },
 ]
 
+// --- Perruques (la spécialité de Renia House) ------------------------------
+export const perruques = {
+  eyebrow: 'Notre spécialité',
+  titre: 'Des perruques de qualité',
+  texte:
+    "Renia House est reconnue pour ses perruques d'exception : lace sur mesure, finitions naturelles, densité parfaite. Trouvez la perruque qui vous ressemble, ou faites-la créer selon vos envies.",
+  cta: 'Commander ma perruque',
+  images: [
+    'perruque1.jpg', 'perruque2.jpg', 'perruque3.jpg', 'perruque4.jpg', 'perruque5.jpg',
+    'perruque6.jpg', 'perruque7.jpg', 'perruque8.jpg', 'perruque9.jpg', 'perruque10.jpg',
+  ],
+}
+
 // --- Galerie ---
 export const galerie = [
+  { fichier: 'perruque2.jpg', legende: 'Perruque lace' },
   { fichier: 'g1.jpg', legende: 'Nail art' },
-  { fichier: 'g2.jpg', legende: 'Mains soignées' },
+  { fichier: 'perruque3.jpg', legende: 'Perruque naturelle' },
   { fichier: 'g3.jpg', legende: 'Maquillage' },
+  { fichier: 'perruque5.jpg', legende: 'Perruque sur mesure' },
+  { fichier: 'g2.jpg', legende: 'Mains soignées' },
+  { fichier: 'perruque7.jpg', legende: 'Perruque longue' },
   { fichier: 'g4.jpg', legende: 'Make-up soirée' },
   { fichier: 'g5.jpg', legende: 'Peau éclatante' },
+  { fichier: 'perruque9.jpg', legende: 'Coiffure perruque' },
   { fichier: 'g6.jpg', legende: 'Vernis' },
-  { fichier: 'g7.jpg', legende: 'Soins' },
   { fichier: 'g8.jpg', legende: 'Onglerie pro' },
+]
+
+// --- Marketing -------------------------------------------------------------
+export const offre = {
+  chip: 'Offre découverte',
+  titre: '-20% sur votre première visite',
+  texte: 'Nouvelle cliente ? Profitez de 20% de réduction sur la prestation de votre choix. Places limitées chaque semaine.',
+  cta: 'Réserver mon créneau',
+}
+
+export const stats = [
+  { n: 500, suffix: '+', l: 'Clientes satisfaites' },
+  { n: 5, suffix: '/5', l: 'Note moyenne' },
+  { n: 6, suffix: '', l: 'Prestations' },
+  { n: 7, suffix: ' j/7', l: 'Sur rendez-vous' },
+]
+
+export const temoignages = [
+  { nom: 'Akossiwa A.', role: 'Cliente fidèle', note: 5, texte: "Un travail soigné et une équipe adorable. Mes tresses tiennent parfaitement et le rendu est magnifique. Je ne vais plus ailleurs !" },
+  { nom: 'Délali K.', role: 'Mariée 2025', note: 5, texte: "Maquillage et coiffure de mariage sublimes. J'ai reçu des compliments toute la journée. Merci Renia House pour ce moment !" },
+  { nom: 'Sandra M.', role: 'Cliente', note: 5, texte: "Accueil chaleureux, salon propre et élégant, et un vrai savoir-faire. La pose de tissage est impeccable. Je recommande à 100%." },
 ]
 
 export const apropos = {

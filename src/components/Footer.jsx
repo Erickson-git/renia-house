@@ -6,15 +6,19 @@ export default function Footer() {
   const logo = `${import.meta.env.BASE_URL}assets/${salon.logoXofix}`
 
   return (
-    <footer className="bg-brown-700 px-5 pt-12 text-cream/70">
+    <footer className="bg-ink-900 px-5 pt-14 text-cream/70">
       <div className="mx-auto grid max-w-6xl gap-8 pb-10 sm:grid-cols-3">
         <div>
-          <p className="font-serif text-2xl text-cream">Renia<span className="text-gold-soft"> House</span></p>
-          <p className="mt-2 text-sm">{salon.activite}</p>
+          <p className="flex items-center gap-2 font-serif text-2xl text-cream">
+            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-orange to-orange-deep text-sm font-bold text-white">R</span>
+            Renia<span className="text-orange-soft"> House</span>
+          </p>
+          <p className="mt-3 text-sm">{salon.activite}</p>
           <p className="text-sm">{salon.ville}</p>
+          <p className="mt-2 text-sm text-orange-soft">Spécialiste perruques de qualité</p>
         </div>
         <div>
-          <p className="mb-3 text-xs uppercase tracking-luxe text-gold-soft">Navigation</p>
+          <p className="mb-3 text-xs uppercase tracking-luxe text-orange-soft">Navigation</p>
           <ul className="space-y-1.5 text-sm">
             <li><Link to="/" className="hover:text-cream">Accueil</Link></li>
             <li><Link to="/prestations" className="hover:text-cream">Prestations</Link></li>
@@ -24,7 +28,7 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <p className="mb-3 text-xs uppercase tracking-luxe text-gold-soft">Suivez-nous</p>
+          <p className="mb-3 text-xs uppercase tracking-luxe text-orange-soft">Suivez-nous</p>
           <div className="flex flex-wrap gap-3 text-sm">
             <a href={salon.reseaux.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-cream">Instagram</a>
             <a href={salon.reseaux.tiktok} target="_blank" rel="noopener noreferrer" className="hover:text-cream">TikTok</a>
@@ -36,11 +40,11 @@ export default function Footer() {
 
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 border-t border-cream/10 py-6 text-center sm:flex-row">
         <p className="text-xs uppercase tracking-luxe text-cream/40">© {annee} Renia House</p>
-        <a href="#" className="flex items-center gap-2 text-xs uppercase tracking-luxe text-cream/50">
+        <span className="flex items-center gap-2 text-xs uppercase tracking-luxe text-cream/50">
           Réalisé par
           <img src={logo} alt="XOFIX" className="h-5 w-auto opacity-80" onError={(e) => (e.currentTarget.style.display = 'none')} />
           <span className="font-semibold text-cream/70">XOFIX</span>
-        </a>
+        </span>
       </div>
     </footer>
   )
